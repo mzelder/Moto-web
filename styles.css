@@ -14,7 +14,7 @@ body {
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Center the white-board vertically */
+    /* justify-content: center;  */
 }
 
 h1, h2 {
@@ -35,7 +35,7 @@ nav {
 
 nav a {
     float: left;
-    display: block;
+    display: flex;
     color: white;
     text-align: center;
     padding: 14px 16px;
@@ -45,6 +45,11 @@ nav a {
 nav a:hover {
     background-color: #dddd;
     color: black;
+}
+
+.right-link {
+    margin-left: auto;
+    float: right;
 }
 
 .white-board {
@@ -58,4 +63,65 @@ nav a:hover {
     border-radius: 30px;
     box-sizing: content-box;
     padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.logging-label {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: 20%;
+    min-height: 250px;
+    padding: 20px 20px;
+
+    
+    background-color: rgba(175, 175, 175, 0.6);
+    border-radius: 30px;
+}
+
+.logging-form {
+    margin: 0 auto;
+    padding: 10px 10px;
+    width: 100%;
+    text-align: middle;
+}
+
+.logging-form input {
+    width: 100%; /* Adjust input width */
+    padding: 10px;
+    border-radius: 30px;
+    border: 1px solid #dddd;
+}
+
+.logging-form input:hover {
+    background-color: #dddd;
+}
+
+.logging-form button {
+    margin: auto 0;
+    width: 50%;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.logging-form button:hover {
+    background-color: #dddd;
+    color: black;
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 1000px) {
+    .logging-label {
+        width: 90%; /* Adjust width for smaller screens */
+    }
 }

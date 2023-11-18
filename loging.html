@@ -8,7 +8,7 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
         <link href="styles.css" rel="stylesheet">
         <link rel="icon" type="image/x-icon" href="moto.png">
-        <title>MotoWeb - Naked</title>
+        <title>MotoWeb - Home</title>
     </head>
     <body>
         <nav>
@@ -20,7 +20,16 @@
             <a class="right-link" href="loging.html" id="loginLink">Log In</a>
             <a class="right-link" href="#" id="logoutLink" style="display: none;">Log Out</a>
         </nav>
-        <div class="white-board"></div>
+        <div class="logging-label">
+            <form autocomplete="off" id="loginForm" class="logging-form">
+                <input type="text" id="username" placeholder="Username">
+                <br><br>
+                <input type="password" id="password" placeholder="Password">
+                <br><br>
+                <button id="loginButton" type="submit">Log In</button>
+            </form>
+        </div>
+        <script src="script.js"></script>
     </body>
 </html>
 
