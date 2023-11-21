@@ -16,7 +16,7 @@ if (loginForm) {
     
         //  Checking if password and username are correct
         if (username ==  "admin" && password == "admin") {  
-            loginButton.style.backgroundColor = "#119134";
+            loginButton.style.backgroundColor = "#04AA6D";
             loginButton.innerText = "Login successful! Redirecting...";
             setTimeout(function() {
                 window.location.href = "index.html";
